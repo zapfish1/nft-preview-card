@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center center;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-transparent-soft-blue: hsla(215, 52%, 70%, 0.462);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-main-bg: hsl(217, 54%, 11%);
+  --color-card-bg: hsl(216, 50%, 16%);
+  --color-line: hsl(215, 32%, 27%);
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-main-bg);
+  color: var(--color-soft-blue);
+}
+
+main {
+  background-color: var(--color-card-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+
+  width: 20rem;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+h1 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-weight: 200;
+}
+
+.etherum {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: var(--color-cyan);
+  font-weight: 500;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 300;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-transparent-soft-blue);
+
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.creation {
+  padding-top: 1rem;
+}
+
+.creation-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.creation img {
+  width: 30px;
+  border-radius: 100%;
+  border: 1px solid white;
+
+  margin-right: 0.6rem;
+}
+
+.creation p {
+  font-weight: 400;
+  gap: 0.3rem;
+}
+
+.creation span {
+  color: white;
+}
