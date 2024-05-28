@@ -121,6 +121,7 @@ picture {
 :root {
   --color-soft-blue: hsl(215, 51%, 70%);
   --color-transparent-soft-blue: hsla(215, 52%, 70%, 0.462);
+  --color-transparent-cyan: hsla(178, 100%, 50%, 0.303);
   --color-cyan: hsl(178, 100%, 50%);
   --color-main-bg: hsl(217, 54%, 11%);
   --color-card-bg: hsl(216, 50%, 16%);
@@ -142,7 +143,7 @@ main {
 }
 
 img {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 h1 {
@@ -206,4 +207,51 @@ p {
 
 .creation span {
   color: white;
+}
+.creation span:hover {
+  color: var(--color-cyan);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: var(--color-cyan);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+img:hover {
+  mask: var(--color-cyan);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.equilibrium {
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  background-color: var(--color-transparent-cyan);
+}
+
+.equilibrium:hover .overlay {
+  opacity: 1;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
