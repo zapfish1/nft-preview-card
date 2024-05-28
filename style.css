@@ -220,12 +220,6 @@ h1:hover {
   cursor: pointer;
 }
 
-img:hover {
-  mask: var(--color-cyan);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
 .equilibrium {
   position: relative;
   cursor: pointer;
